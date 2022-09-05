@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>txt viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="/rrc/style.css">
+    <style>
+body {
+    background: #fafafa;
+}
+.navbar {
+    padding: 3px 0px;
+}
+.container-fluid {
+  padding: 0px;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    height: 100%;
+    overflow: scroll;
+    min-width: 35%;
+    max-width: 35%;
+    position: fixed;
+}
+#content {
+  height: 100%;
+  width: 98%;
+  padding-left: 40%;
+}
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  margin: 0;
+ }
+.Heading3 {
+  font-size: 1.0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  font-weight: bold;
+}
+.Heading4 {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  color: rgb(0, 77, 29);
+}
+.TXT {
+  font-size: 0.75rem;
+}
+.GRAY {
+  color: #808080;
+  font-size: 0.7rem;
+}
+  </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <nav id="sidebar">
+          <object type="image/svg+xml" style="min-width: 100%; max-width: 100%; align: center" data="https://www.plantuml.com/plantuml/svg/xSs_2i903CVnlKyHSBuA7KMaVvOkBgwbmrb3BLmlskJewtlOGP03LuVC-URpArdi8c5sMUMc0S6SeARh0QeWT_Go3LOcyd31Pq2MBDx0nEOT9of-a6VClZ5FiLl0fj4jFXgprLsthci-4eqEyu7cptjwhUzLK4455LHGGGKLLFWVOR-hcwQjc_QCp7R4uXTIHAL4VmkpUm40"></object>
+          <li><a href="http://#EUTRARRCDefinitions">–    EUTRA-RRC-Definitions</a></li>
+        </nav>
+        <div id="content">
+          <div class="Heading3"><a name="621Generalmessagestructure"></a>6.2.1     General message structure</div>
+          <div class="Heading4"><a name="EUTRARRCDefinitions"></a>–    EUTRA-RRC-Definitions</div>
+          <div class="TXT">This ASN.1 segment is the start of the EUTRA RRC PDU definitions. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="EUTRARRCDefinitionsDEFINITIONSAUTOMATICTAGS"></a>EUTRA-RRC-Definitions DEFINITIONS AUTOMATIC TAGS ::&#x3D; 
+              <span class="PINK">BEGIN </span>
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="TXT">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+          <div class="Heading4"><a name="BCCHBCHMessage2"></a>–    BCCH-BCH-Message</div>
+          <div class="TXT">The BCCH-BCH-Message class is the set of RRC messages that may be sent from the EUTRAN to the UE via BCH on the BCCH logical channel. </div>
+          <pre>
+            <div class="PL">
+              <span class="GRAY">-- ASN1START</span>
+              <a name="BCCHBCHMessage"></a>BCCH-BCH-Message ::&#x3D;
+              <span class="PINK">SEQUENCE </span>{ 
+              message                    <a href="#BCCHBCHMessageType">BCCH-BCH-MessageType</a> 
+              } 
+              <a name="BCCHBCHMessageType"></a>BCCH-BCH-MessageType ::&#x3D;                        MasterInformationBlock 
+              <span class="GRAY">-- ASN1STOP</span>
+            </div>
+          </pre>
+          <hr>
+        </div>
+      </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>function acknowledgement() { console.log("To Zhen and Aiden ..."); }</script>
+</body>
+</html>
